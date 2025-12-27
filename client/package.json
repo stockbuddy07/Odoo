@@ -1,0 +1,56 @@
+{
+  "name": "gearguard-client",
+  "private": true,
+  "version": "1.0.0",
+  "description": "GearGuard ERP Maintenance Tracker Frontend",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.13",
+    "@heroicons/react": "^2.0.16",
+    "@hookform/resolvers": "^2.9.11",
+    "axios": "^1.3.4",
+    "bootstrap": "^5.3.8",
+    "clsx": "^1.2.1",
+    "lucide-react": "^0.244.0",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-big-calendar": "^1.6.9",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.5",
+    "react-hot-toast": "^2.6.0",
+    "react-router-dom": "^6.30.2",
+    "tailwind-merge": "^1.12.0",
+    "yup": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.0.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.3.0"
+  },
+  "keywords": [
+    "erp",
+    "maintenance",
+    "tracker",
+    "react",
+    "kanban",
+    "calendar"
+  ],
+  "author": "GearGuard Team",
+  "license": "MIT"
+}

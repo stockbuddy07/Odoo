@@ -1,0 +1,39 @@
+{
+  "name": "gearguard-erp",
+  "version": "1.0.0",
+  "description": "GearGuard ERP - The Ultimate Maintenance Tracker",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm run dev",
+    "server": "cd server && npm start",
+    "client": "cd client && npm run build",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build",
+    "start": "concurrently \"npm run server\" \"npm run client:preview\"",
+    "client:preview": "cd client && npm run preview",
+    "test": "concurrently \"npm run server:test\" \"npm run client:test\"",
+    "server:test": "cd server && npm test",
+    "client:test": "cd client && npm test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "keywords": [
+    "erp",
+    "maintenance",
+    "tracker",
+    "react",
+    "nodejs",
+    "mysql",
+    "kanban",
+    "calendar"
+  ],
+  "author": "GearGuard Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/gearguard-erp.git"
+  }
+}
