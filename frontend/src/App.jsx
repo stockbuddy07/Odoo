@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Kanban from "./pages/Kanban";
-import AppLayout from "./components/AppLayout";
+import Kanban from "../pages/Kanban.jsx";
+import AppLayout from "../components/AppLayout.jsx";
 
 export default function App() {
   const [dark, setDark] = useState(false);

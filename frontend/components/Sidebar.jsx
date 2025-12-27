@@ -1,27 +1,27 @@
 import { Wrench, Calendar, Cpu, Moon } from "lucide-react";
 
-export default function Sidebar({ dark, toggleDark }) {
+export default function Sidebar({ toggleDark }) {
   return (
-    <aside className="w-64 bg-white dark:bg-slate-900 border-r dark:border-slate-700 h-screen p-4">
-      <h2 className="text-xl font-bold mb-6 text-blue-600">GearGuard</h2>
+    <aside className="w-64 bg-white dark:bg-slate-800 border-r p-4">
+      <h1 className="text-xl font-bold text-blue-600 mb-6">GearGuard</h1>
 
       <nav className="space-y-3">
-        <a className="flex items-center gap-3 p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800">
+        <div className="flex items-center gap-2 p-2 hover:bg-slate-100 rounded">
           <Wrench size={18} /> Maintenance
-        </a>
-        <a className="flex items-center gap-3 p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800">
+        </div>
+        <div className="flex items-center gap-2 p-2 hover:bg-slate-100 rounded">
           <Calendar size={18} /> Calendar
-        </a>
-        <a className="flex items-center gap-3 p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800">
+        </div>
+        <div className="flex items-center gap-2 p-2 hover:bg-slate-100 rounded">
           <Cpu size={18} /> Equipment
-        </a>
+        </div>
       </nav>
 
       <button
         onClick={toggleDark}
-        className="mt-10 flex items-center gap-2 text-sm text-gray-500"
+        className="mt-8 flex items-center gap-2 text-sm text-gray-600"
       >
-        <Moon size={16} /> Toggle Dark Mode
+        <Moon size={16} /> Dark Mode
       </button>
     </aside>
   );

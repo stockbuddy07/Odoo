@@ -1,11 +1,11 @@
-import Sidebar from "./Sidebar";
+import Sidebar from "./Sidebar.jsx";
 
 export default function AppLayout({ children, dark, toggleDark }) {
   return (
-    <div className={`flex ${dark ? "dark" : ""}`}>
-      <Sidebar dark={dark} toggleDark={toggleDark} />
-      <div className="flex-1 bg-slate-100 dark:bg-slate-800 min-h-screen">
-        {children}
+    <div className={dark ? "dark" : ""}>
+      <div className="flex min-h-screen bg-slate-100 dark:bg-slate-900">
+        <Sidebar toggleDark={toggleDark} />
+        <main className="flex-1 p-6">{children}</main>
       </div>
     </div>
   );
